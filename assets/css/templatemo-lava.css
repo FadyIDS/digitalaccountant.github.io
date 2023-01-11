@@ -682,6 +682,7 @@ welcome
   margin-bottom: 30px;
   color: #191a20;
 }
+
 .AboutParagraph{
   display: flex;
   text-align: center;
@@ -785,6 +786,14 @@ welcome
   .welcome-area .header-text .left-text {
     margin-top: 5%;
     transform: none !important;
+    text-align: center;
+    display: inline;
+    width: 100% !important;
+  }
+  .welcome-area .header-text .container .row{
+    width: 100% !important;
+    display: inline-block;
+    direction: rtl;
   }
 }
 @media (max-width: 810px) {
@@ -800,6 +809,39 @@ welcome
   .container-fluid .col-md-12 {
     margin-right: 0px;
     padding-right: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .welcome-area .header-text .left-text{
+    width: 100% !important;
+    /* margin: 0 !important; */
+    direction: rtl;
+  }
+  .container{
+    max-width: 100%;
+  }
+  .welcome-area .header-text .left-text a.main-button-slider{
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 719px){
+  .welcome-area .header-text h1{
+    display: flex;
+  }
+}
+@media screen and (max-width: 708px){
+  .welcome-area .header-text h1{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .welcome-area .header-text p{
+    text-align: center;
   }
 }
 
@@ -898,6 +940,11 @@ about
 .Why-first-Para{
   margin-bottom: 20px;
 }
+@media screen and (max-width: 767px) {
+  .Why-first-Para{
+    margin-right: 20px;
+  }
+}
 .Why-List li{
   margin-bottom: 20px;
   list-style: inside;
@@ -909,9 +956,9 @@ about
   text-decoration: underline !important;
   text-underline-position: under;
 }
-.image_Why img{
+/* .image_Why img{
   
-}
+} */
 .Why_text{
   margin-bottom: 45px;
   text-align: center;
