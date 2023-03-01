@@ -1838,3 +1838,17 @@ preloader
     opacity: 0;
   }
 }
+#btn-up {
+  background-color: green;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 4px;
+  position: fixed!important;
+  bottom: 20px !important; 
+  right: 20px!important;
+  display: none;
+  cursor: pointer;
+  /* z-index: -1; */
+} 

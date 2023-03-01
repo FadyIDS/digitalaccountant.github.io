@@ -2,30 +2,31 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="TemplateMo">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
     <title>IDS - Digital Accountant</title>
-    
+
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
-    
+
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    
+
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-    
+
     <link rel="stylesheet" href="assets/css/templatemo-lava.css">
-    
+
     <link rel="stylesheet" href="assets/css/owl-carousel.css">
-    
+
 </head>
 
 <body>
-    
+
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
         <div class="jumper">
@@ -35,8 +36,28 @@
         </div>
     </div>
     <!-- ***** Preloader End ***** -->
-    
-    
+
+    <button id="btn-up">UP</button>
+    <script>
+        let btn = document.getElementById('btn-up');
+
+        window.onscroll = function () {
+            if (window.scrollY >= 600) {
+                btn.style.display = "block";
+                // btn.style.zIndex = "-1";
+            } else {
+                btn.style = "none";
+            }
+        };
+
+        btn.onclick = function () {
+            window.scrollTo({
+                left: 0,
+                top: 0,
+                behavior: "smooth",
+            });
+        };
+    </script>
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky">
         <div class="container">
@@ -60,39 +81,41 @@
                                 <ul>
                                     <li><a href="#promotion" class="menu-item">ما يميزنا</a></li>
                                     <li><a href="#testimonials" class="menu-item">عن المنصه</a></li>
-                                    
+
                                     <!-- <li><a href="" class="menu-item">Work Optimization</a></li>
                                         <li><a href="" class="menu-item">Content Creation</a></li> -->
-                                    </ul>
-                                </li>
-                                <li class="scroll-to-section"><a href="#contact-us" class="menu-item">تواصل معنا</a></li>
-                            </ul>
-                            <a class='menu-trigger'>
-                                <span>Menu</span>
-                            </a>
-                            <!-- ***** Menu End ***** -->
-                        </nav>
-                    </div>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">تواصل معنا</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
                 </div>
             </div>
-        </header>
-        <!-- ***** Header Area End ***** -->
-        
-        
-        <!-- ***** Welcome Area Start ***** -->
-        <div class="welcome-area" id="welcome">
-            
-            <!-- ***** Header Text Start ***** -->
-            <div class="header-text">
-                <div class="container">
-                    <div class="row">
-                        <div  class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
                         id="edata-scroll-revealnter left move 30px over 0.6s after 0.4s">
                         <h1 dir="rtl">مرحبا بكم في منصة <em>اﻟﻤﺤﺎﺳﺐ اﻟﺮﻗﻤﻲ</em></h1>
                         <p dir="rtl">
-                            منصة المحاسب الرقمي هي منصة تم انشاؤها بواسطة شركة IDS. وهي واحدة من افضل الشركات الرائدة في مجال اعداد وتصميم وتطوير البرمجيات
-                        </p> 
-                        <a dir="rtl" href="https://fadyids.github.io/intelligent_digital_solutions_website/" class="main-button-slider">عن IDS</a>
+                            منصة المحاسب الرقمي هي منصة تم انشاؤها بواسطة شركة IDS. وهي واحدة من افضل الشركات الرائدة في
+                            مجال اعداد وتصميم وتطوير البرمجيات
+                        </p>
+                        <a dir="rtl" href="https://fadyids.github.io/intelligent_digital_solutions_website/"
+                            class="main-button-slider">عن IDS</a>
                     </div>
                 </div>
             </div>
@@ -100,137 +123,161 @@
         <!-- ***** Header Text End ***** -->
     </div>
     <!-- ***** Welcome Area End ***** -->
-    
+
     <!-- ***** Features Big Item Start ***** -->
     <section class="section" id="about">
         <div class="FirstHeadercontainer">
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 Centerlize"
-            data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-            <h1><em>من نحن؟</em></h1>
+                data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                <h1><em>من نحن؟</em></h1>
+            </div>
         </div>
-    </div>
-    <div class="AboutParagraph" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">>
-        <p class="paragraphInfo" dir="rtl">
-            تعمل شركة IDS في مجال إعداد وتصميم وتطوير البرمجيات ودمج حلول تكنولوجيا المعلومات لتتناسب مع احتياجات السوق المحلية بجودة وبكفاءه عاليه, وبأحدث الحلول التكنولوجية المتاحة في السوق لتوفير أفضل البرامج بأقل تكلفة ممكنة وأعلى كفاءه مطلوبه في السوق المحليه, وما يميز برامج شركة IDS هي سهولة الأستخدام مما يعود علي عملائنا بفائده كبيره و ذلك من اجل سرعة أتخاذ القرارات بفضل أستخدام برامجنا المتاحه التي تتميز بالكثير من المرونة والأسقرار والكفاءه للتوافق مع متطلبات عملائنا
-        </p>
-    </div>    
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-            data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-            <div class="features-item">
-                <div class="features-icon">
-                    <h2>01</h2>
-                    <img src="assets/images/features-icon-1-Edit.png" alt="">
-                    <h3><strong>تحليل الإتجاه</strong></h3>
-                    <p>
-                        تعتمد الشركه في عملها على تحليل الإتجاه وهو ممارسة لجمع المعلومات، للتنبؤ بالأحداث المستقبلية ومعرفة المشكلات التي تواجهها مجالات المجتمع وتقديم أفضل وأسرع الحلول البسيطه الذكيه
-                    </p>
-                    <a href="#contact-us" class="main-button">
-                        لمعرفة المزيد
-                    </a>
+        <div class="AboutParagraph" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">>
+            <p class="paragraphInfo" dir="rtl">
+                تعمل شركة IDS في مجال إعداد وتصميم وتطوير البرمجيات ودمج حلول تكنولوجيا المعلومات لتتناسب مع احتياجات
+                السوق المحلية بجودة وبكفاءه عاليه, وبأحدث الحلول التكنولوجية المتاحة في السوق لتوفير أفضل البرامج بأقل
+                تكلفة ممكنة وأعلى كفاءه مطلوبه في السوق المحليه, وما يميز برامج شركة IDS هي سهولة الأستخدام مما يعود علي
+                عملائنا بفائده كبيره و ذلك من اجل سرعة أتخاذ القرارات بفضل أستخدام برامجنا المتاحه التي تتميز بالكثير من
+                المرونة والأسقرار والكفاءه للتوافق مع متطلبات عملائنا
+            </p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>01</h2>
+                            <img src="assets/images/features-icon-1-Edit.png" alt="">
+                            <h3><strong>تحليل الإتجاه</strong></h3>
+                            <p>
+                                تعتمد الشركه في عملها على تحليل الإتجاه وهو ممارسة لجمع المعلومات، للتنبؤ بالأحداث
+                                المستقبلية ومعرفة المشكلات التي تواجهها مجالات المجتمع وتقديم أفضل وأسرع الحلول البسيطه
+                                الذكيه
+                            </p>
+                            <a href="#contact-us" class="main-button">
+                                لمعرفة المزيد
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>02</h2>
+                            <img src="assets/images/features-icon-2-Edit.png" alt="">
+                            <h3><strong>إدارة الجودة</strong></h3>
+                            <p>
+                                إدارة الجودة هي الطريقه التي تضمن بأن جميع النشاطات الضروريه لتصميم وتطوير ومن ثم تطبيق
+                                المنتج أو الخدمه في المؤسسة فعّآله وتعمل بكفاءه عاليه وممتازه لتقديم افضل الحلول الذكية
+                                لمساعدة عملائنا
+                            </p>
+                            <a href="#contact-us" class="main-button">
+                                لمعرفة المزيد
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>03</h2>
+                            <img src="assets/images/features-icon-3-Edit.png" alt="">
+                            <h3><strong>إدارة المشاريع</strong></h3>
+                            <p dir="rtl">
+                                تمتاز شركة IDS بإدارة المشاريع وبتنظيم وإدارة الموارد بالطريقة التي تُمَكِن إنجاز
+                                المشروع مع مراعاة عوامل الجوده والتوقيت والتكلفة لتحقيق الوضع الأمثل فيما يتعلق بتخصيص
+                                الموارد من أجل ملاقاة أهداف الشركه
+                            </p>
+                            <a href="#contact-us" class="main-button">
+                                لمعرفة المزيد
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-        data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-        <div class="features-item">
-            <div class="features-icon">
-                <h2>02</h2>
-                <img src="assets/images/features-icon-2-Edit.png" alt="">
-                <h3><strong>إدارة الجودة</strong></h3>
-                <p>
-                    إدارة الجودة هي الطريقه التي تضمن بأن جميع النشاطات الضروريه لتصميم وتطوير ومن ثم تطبيق المنتج أو الخدمه في المؤسسة فعّآله وتعمل بكفاءه عاليه وممتازه لتقديم افضل الحلول الذكية لمساعدة عملائنا
-                </p>
-                <a href="#contact-us" class="main-button">
-                    لمعرفة المزيد
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-    <div class="features-item">
-        <div class="features-icon">
-            <h2>03</h2>
-            <img src="assets/images/features-icon-3-Edit.png" alt="">
-            <h3><strong>إدارة المشاريع</strong></h3>
-            <p dir="rtl">
-                تمتاز شركة IDS بإدارة المشاريع وبتنظيم وإدارة الموارد بالطريقة التي تُمَكِن إنجاز المشروع مع مراعاة عوامل الجوده والتوقيت والتكلفة لتحقيق الوضع الأمثل فيما يتعلق بتخصيص الموارد من أجل ملاقاة أهداف الشركه
-            </p>
-            <a href="#contact-us" class="main-button">
-                لمعرفة المزيد
-            </a>
-        </div>
-    </div>
-</div>
-</div>
-</div>
 
-</section>
-<!-- ***** Features Big Item End ***** -->
+    </section>
+    <!-- ***** Features Big Item End ***** -->
 
 
 
-<!-- **** Why We Developed It Section Start  -->
-<section class="section" id="Why">
-    
-    <div class="why_section layout_padding">
-        <div class="Container">
-            <div class="col-sm-12 col-xs-12 Centerlize"
-            data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-            <h1 class="Why_text">لماذا تم تصميم المحاسب الرقمي؟</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <p data-scroll-reveal="enter left move 30px over 0.6s after 0.4s" class="Why-first-Para">
-                    تم تصميم المحاسب الرقمي لمواكبة إجراءات الحكومه في التحول الرقمي للفواتير والإيصالات وإرسالها الى مصلحة الضرائب المصريه ولكن كان هناك العديد من المشكال الواجب حلها وللاسف البرامج الموجوده تعتمد فقط على إرسال او استقبال فواتير إلكترونيه
-                </p>
-                <div class="offset-lg-1  col-md-12 col-sm-12 mobile-bottom-fix" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <p>
-                        <ol class="Why-List">
-                            <li>
-                                حل مشكله الموردين لمراجعة الفواتير الإلكترونيه مع المحاسب الخاص بهم فكان من الضروري ربط المحاسب الرقمي بالفاتوره الإلكترونيه مع إمكانية إنشاء كافة التقارير المطلوبه ومراجعتها
-                            </li>
-                            <li>
-                                ايضا مشكله أٌخرى وهي أن الموردين تحتاج إلى إرسال الفاتوره من اكتر من جهاز ولأكتر من فرع وبأكتر من مستخدم بأدوارٍ محدده مختلفه مع إمكانية مراجعة مكاتب المحاسبه بشكل متكامل وبسيط
-                            </li>
-                            <!-- <li>
+    <!-- **** Why We Developed It Section Start  -->
+    <section class="section" id="Why">
+
+        <div class="why_section layout_padding">
+            <div class="Container">
+                <div class="col-sm-12 col-xs-12 Centerlize"
+                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <h1 class="Why_text">لماذا تم تصميم المحاسب الرقمي؟</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p data-scroll-reveal="enter left move 30px over 0.6s after 0.4s" class="Why-first-Para">
+                            تم تصميم المحاسب الرقمي لمواكبة إجراءات الحكومه في التحول الرقمي للفواتير والإيصالات
+                            وإرسالها الى مصلحة الضرائب المصريه ولكن كان هناك العديد من المشكال الواجب حلها وللاسف
+                            البرامج الموجوده تعتمد فقط على إرسال او استقبال فواتير إلكترونيه
+                        </p>
+                        <div class="offset-lg-1  col-md-12 col-sm-12 mobile-bottom-fix"
+                            data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                            <p>
+                            <ol class="Why-List">
+                                <li>
+                                    حل مشكله الموردين لمراجعة الفواتير الإلكترونيه مع المحاسب الخاص بهم فكان من الضروري
+                                    ربط المحاسب الرقمي بالفاتوره الإلكترونيه مع إمكانية إنشاء كافة التقارير المطلوبه
+                                    ومراجعتها
+                                </li>
+                                <li>
+                                    ايضا مشكله أٌخرى وهي أن الموردين تحتاج إلى إرسال الفاتوره من اكتر من جهاز ولأكتر من
+                                    فرع وبأكتر من مستخدم بأدوارٍ محدده مختلفه مع إمكانية مراجعة مكاتب المحاسبه بشكل
+                                    متكامل وبسيط
+                                </li>
+                                <!-- <li>
                                 في نفس الوقت يحتاج المورد لعمل الفواتير الخاصه به والإحتفاظ بها سواء في وجود إتصال بالإنترنت او بدون, إلى حين عودة الإتصال وعمل مزامنه مع مصلحة الضرائب المصريه
                             </li> -->
-                            <li>
-                                بالإضافه إلى حل مشكلة صعوبة متابعة مكاتب المحاسبه للعملاء المشتركين في الفاتوره و الإيصال الإلِكتروني أو صعوبة متابعة مكاتب الفروع الرئيسيه بالشركات مع الفروع الأخرى ومراجعة تقاريرهم
-                            </li>
-                            <li>
-                                وبشكل خاص حل مشكلة مكاتب المحاسبه المتمثله في ملفات  العملاء وسهولة متابعة كافة إجراءات الفحص الخاصه بهم
-                            </li>
-                            <li>
-                                وكذلك أيضاً حل مشكلة عدم توفير الوقت عن طريق عمل نماذج فاتوره قابله للتعديل يمكنك من إرسالها اكثر من مره في وقت قصير
-                            </li>
-                            <li>
-                                وأيضاً توفير التقارير الكافيه الخاصه بمراجعة الفواتير التي تم إصدارها و انشاء مسوده خاصه بالفاتوره قابله للتعديل ويمكنك ارسال اكثر من مسوده في آنٍ واحد إلى مصلحة الضرائب المصريه
-                            </li>
-                            <p>
-                                كل هذه المشاكل ومشاكل ايضاً أخرى دفعتنا لتطوير منصه متكامله وامنه وسهله فالإستخدام بإسم <a href="#">المحاسب الرقمي</a>
+                                <li>
+                                    بالإضافه إلى حل مشكلة صعوبة متابعة مكاتب المحاسبه للعملاء المشتركين في الفاتوره و
+                                    الإيصال الإلِكتروني أو صعوبة متابعة مكاتب الفروع الرئيسيه بالشركات مع الفروع الأخرى
+                                    ومراجعة تقاريرهم
+                                </li>
+                                <li>
+                                    وبشكل خاص حل مشكلة مكاتب المحاسبه المتمثله في ملفات العملاء وسهولة متابعة كافة
+                                    إجراءات الفحص الخاصه بهم
+                                </li>
+                                <li>
+                                    وكذلك أيضاً حل مشكلة عدم توفير الوقت عن طريق عمل نماذج فاتوره قابله للتعديل يمكنك من
+                                    إرسالها اكثر من مره في وقت قصير
+                                </li>
+                                <li>
+                                    وأيضاً توفير التقارير الكافيه الخاصه بمراجعة الفواتير التي تم إصدارها و انشاء مسوده
+                                    خاصه بالفاتوره قابله للتعديل ويمكنك ارسال اكثر من مسوده في آنٍ واحد إلى مصلحة
+                                    الضرائب المصريه
+                                </li>
+                                <p>
+                                    كل هذه المشاكل ومشاكل ايضاً أخرى دفعتنا لتطوير منصه متكامله وامنه وسهله فالإستخدام
+                                    بإسم <a href="#">المحاسب الرقمي</a>
+                                </p>
+                            </ol>
                             </p>
-                        </ol>
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6 Image-Container1">
-                <div class="image_Why">
-                    <img src="assets/images/all Devices.png">
+                        </div>
+                    </div>
+                    <div class="col-md-6 Image-Container1">
+                        <div class="image_Why">
+                            <img src="assets/images/all Devices.png">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-</section>
+    </section>
 
 
-<!-- ******** Slider Section ********* -->
+    <!-- ******** Slider Section ********* -->
 
-<!-- <section class="Slider-Section" id="slider">
+    <!-- <section class="Slider-Section" id="slider">
     <div class="container">
         <div class="Slider-Header">
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 Centerlize"
@@ -260,7 +307,7 @@
 
 
 
-<!-- <div class="gallery js-flickity"
+    <!-- <div class="gallery js-flickity"
     data-flickity-options='{ "wrapAround": true }'>
     <div class="gallery-cell"></div>
     <div class="gallery-cell"></div>
@@ -271,19 +318,19 @@
 
 
 
-<section class="section" id="Carousel-slide">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <div class="Carousel-heading" dir="rtl">
-                    <h2>لماذا افضل اختيار لك هو <em>المحاسب الرقمي</em>؟</h2>
-                    <!-- <p>المحاسب الرقمي هو نظام متكامل يساعد المحاسب في اداء المهام اليوميه بشكل سريع و منسق</p> -->
+    <section class="section" id="Carousel-slide">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="Carousel-heading" dir="rtl">
+                        <h2>لماذا افضل اختيار لك هو <em>المحاسب الرقمي</em>؟</h2>
+                        <!-- <p>المحاسب الرقمي هو نظام متكامل يساعد المحاسب في اداء المهام اليوميه بشكل سريع و منسق</p> -->
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-10 col-md-12 col-sm-12 mobile-bottom-fix-big"
-            data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-            <div class="owl-carousel owl-theme">
-                <!-- <div class="item service-item">
+                <div class="col-lg-10 col-md-12 col-sm-12 mobile-bottom-fix-big"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="owl-carousel owl-theme">
+                        <!-- <div class="item service-item">
                     <div class="testimonial-content" style="background-image: url(assets/images/Screens/Creat-Invoice-Code-Details.png);">
                         
                         <p class="Contained-P" dir="rtl">
@@ -292,99 +339,112 @@
                         <span>IDS</span>
                     </div>
                 </div> -->
-                
-                
-                <div class="item service-item">
-                    <!-- <div class="author">
+
+
+                        <div class="item service-item">
+                            <!-- <div class="author">
                         <i><img src="assets/images/testimonial-Logo-2-Edit.png" alt="Second Author"></i>
                     </div> -->
-                    <div class="testimonial-content" style="background-image: url(assets/images/Screens/Create-Notes.png);">
-                        <!-- <h3>الفاتوره الإلكترونيه</h3> -->
-                        <strong>
-                            <p class="Contained-P" dir="rtl">
-                                مصمم للعمل على اكتر من جهاز سواء موبايل او تابليت او كمبيوتر ولأكتر من فرع بأكتر من مستخدم بأدوار مختلفه مع إمكانية مراجعة مكتب المحاسبه الخاص بالشركه لجميع المستخدمين 
-                            </p>
-                        </strong>
-                        <span>IDS</span>
+                            <div class="testimonial-content"
+                                style="background-image: url(assets/images/Screens/Create-Notes.png);">
+                                <!-- <h3>الفاتوره الإلكترونيه</h3> -->
+                                <strong>
+                                    <p class="Contained-P" dir="rtl">
+                                        مصمم للعمل على اكتر من جهاز سواء موبايل او تابليت او كمبيوتر ولأكتر من فرع بأكتر
+                                        من مستخدم بأدوار مختلفه مع إمكانية مراجعة مكتب المحاسبه الخاص بالشركه لجميع
+                                        المستخدمين
+                                    </p>
+                                </strong>
+                                <span>IDS</span>
+                            </div>
+                        </div>
+
+                        <div class="item service-item">
+                            <!-- <div class="author">
+                        <i><img src="assets/images/testimonial-Receipt-Logo.png" alt="Author Third"></i>
+                    </div> -->
+                            <div class="testimonial-content"
+                                style="background-image: url(assets/images/Screens/Create-Receiver.png);">
+                                <!-- <h3>الإيصال الإلكتروني</h3> -->
+                                <p class="Contained-P" dir="rtl">
+                                    بإمكان مكاتب المحاسبه من إرسال الفاتوره بعد مراجعتها او الإحتفاظ بها وإستخراج كافة
+                                    انواع التقارير(مبيعات - مشتريات - مصروفات - الخ...) المطلوبه سواء يومي او شهري او
+                                    ربع سنوي وايضا تقارير اخرى كالإقرارات الضريبيه بالفواتير المرسله
+                                </p>
+                                <span>IDS</span>
+                            </div>
+                        </div>
+
+                        <div class="item service-item">
+                            <!-- <div class="author">
+                        <i><img src="assets/images/testimonial-Receipt-Logo.png" alt="Author Third"></i>
+                    </div> -->
+                            <div class="testimonial-content"
+                                style="background-image: url(assets/images/Screens/Default-Invoice.png);">
+                                <!-- <h3>الإيصال الإلكتروني</h3> -->
+                                <p class="Contained-P" dir="rtl">
+                                    تمكن المنصه مكاتب المحاسبه متابعة إنشاء وتسجيل شركات ومراجعة الضرائب وعمليات الفحص
+                                    وتقديم الإستشارات الضريبيه او التجاريه للشركات المختلفه
+                                </p>
+                                <span>IDS</span>
+                            </div>
+                        </div>
+
+                        <div class="item service-item">
+                            <!-- <div class="author">
+                        <i><img src="assets/images/testimonial-Receipt-Logo.png" alt="Author Third"></i>
+                    </div> -->
+                            <div class="testimonial-content"
+                                style="background-image: url(assets/images/Screens/Draft.png);">
+                                <!-- <h3>الإيصال الإلكتروني</h3> -->
+                                <p class="Contained-P" dir="rtl">
+                                    يسهل تطوير المنصه والتحكم فيها لمواكبة التغييرات المطلوبه من قبل العملاء المستخدمين
+                                </p>
+                                <span>IDS</span>
+                            </div>
+                        </div>
+
+                        <div class="item service-item">
+                            <!-- <div class="author">
+                        <i><img src="assets/images/testimonial-Receipt-Logo.png" alt="Author Third"></i>
+                    </div> -->
+                            <div class="testimonial-content"
+                                style="background-image: url(assets/images/Screens/Multi-Offices.png);">
+                                <!-- <h3>الإيصال الإلكتروني</h3> -->
+                                <p class="Contained-P" dir="rtl">
+                                    المحاسب الرقمي يمكن إستخدامه ك ERP لإصدار الفواتير والإيصالات وعمل التقارير الخاصه
+                                    بهم وربطه بمصلحة الضرائب كما يمكن ربطه ب ERP موجود وإرسال اكتر من فاتوره للمصلحه في
+                                    وقت واحد
+                                </p>
+                                <span>IDS</span>
+                            </div>
+                        </div>
+
+                        <div class="item service-item">
+                            <!-- <div class="author">
+                        <i><img src="assets/images/testimonial-Receipt-Logo.png" alt="Author Third"></i>
+                    </div> -->
+                            <div class="testimonial-content"
+                                style="background-image: url(assets/images/Screens/Offices.png);">
+                                <!-- <h3>الإيصال الإلكتروني</h3> -->
+                                <p class="Contained-P" dir="rtl">
+                                    تتميز المنصه بنظم الحمايه المعتمده دوليا وبخبرات في تصميم انظمة البنوك العالميه
+                                </p>
+                                <span>IDS</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="item service-item">
-                    <!-- <div class="author">
-                        <i><img src="assets/images/testimonial-Receipt-Logo.png" alt="Author Third"></i>
-                    </div> -->
-                    <div class="testimonial-content" style="background-image: url(assets/images/Screens/Create-Receiver.png);">
-                        <!-- <h3>الإيصال الإلكتروني</h3> -->
-                        <p class="Contained-P" dir="rtl">
-                            بإمكان مكاتب المحاسبه من إرسال الفاتوره بعد مراجعتها او الإحتفاظ بها وإستخراج كافة انواع التقارير(مبيعات - مشتريات - مصروفات - الخ...) المطلوبه سواء يومي او شهري او ربع سنوي وايضا تقارير اخرى كالإقرارات الضريبيه بالفواتير المرسله
-                        </p>
-                        <span>IDS</span>
-                    </div>
-                </div>
-                
-                <div class="item service-item">
-                    <!-- <div class="author">
-                        <i><img src="assets/images/testimonial-Receipt-Logo.png" alt="Author Third"></i>
-                    </div> -->
-                    <div class="testimonial-content" style="background-image: url(assets/images/Screens/Default-Invoice.png);">
-                        <!-- <h3>الإيصال الإلكتروني</h3> -->
-                        <p class="Contained-P" dir="rtl">
-                            تمكن المنصه مكاتب المحاسبه متابعة إنشاء وتسجيل شركات ومراجعة الضرائب وعمليات الفحص وتقديم الإستشارات الضريبيه او التجاريه للشركات المختلفه 
-                        </p>
-                        <span>IDS</span>
-                    </div>
-                </div> 
-                
-                <div class="item service-item">
-                    <!-- <div class="author">
-                        <i><img src="assets/images/testimonial-Receipt-Logo.png" alt="Author Third"></i>
-                    </div> -->
-                    <div class="testimonial-content" style="background-image: url(assets/images/Screens/Draft.png);">
-                        <!-- <h3>الإيصال الإلكتروني</h3> -->
-                        <p class="Contained-P" dir="rtl">
-                            يسهل تطوير المنصه والتحكم فيها لمواكبة التغييرات المطلوبه من قبل العملاء المستخدمين
-                        </p>
-                        <span>IDS</span>
-                    </div>
-                </div> 
-                
-                <div class="item service-item">
-                    <!-- <div class="author">
-                        <i><img src="assets/images/testimonial-Receipt-Logo.png" alt="Author Third"></i>
-                    </div> -->
-                    <div class="testimonial-content" style="background-image: url(assets/images/Screens/Multi-Offices.png);">
-                        <!-- <h3>الإيصال الإلكتروني</h3> -->
-                        <p class="Contained-P" dir="rtl">
-                            المحاسب الرقمي يمكن إستخدامه ك ERP لإصدار الفواتير والإيصالات وعمل التقارير الخاصه بهم وربطه بمصلحة الضرائب كما يمكن ربطه ب ERP موجود وإرسال اكتر من فاتوره للمصلحه في وقت واحد
-                        </p>
-                        <span>IDS</span>
-                    </div>
-                </div>     
-                
-                <div class="item service-item">
-                    <!-- <div class="author">
-                        <i><img src="assets/images/testimonial-Receipt-Logo.png" alt="Author Third"></i>
-                    </div> -->
-                    <div class="testimonial-content" style="background-image: url(assets/images/Screens/Offices.png);">
-                        <!-- <h3>الإيصال الإلكتروني</h3> -->
-                        <p class="Contained-P" dir="rtl">
-                            تتميز المنصه بنظم الحمايه المعتمده دوليا وبخبرات في تصميم انظمة البنوك العالميه
-                        </p>
-                        <span>IDS</span>
-                    </div>
-                </div> 
             </div>
         </div>
-    </div>
-</div>
-</section>
+    </section>
 
 
 
 
 
-<!--carousel-->
-<!-- <section class="carousel-try">
+    <!--carousel-->
+    <!-- <section class="carousel-try">
     <div id="carousel-mina" class="carousel-class" data-ride="carousel" data-interval="0">
         
         <ul class="carousel-indicators">
@@ -438,81 +498,82 @@
 
 
 
-<!--<div class="left-image-decor"></div>-->
+    <!--<div class="left-image-decor"></div>-->
 
 
 
 
-<!-- ***** Features Big Item Start ***** -->
-<section class="section" id="promotion">
-    <div class="FirstHeadercontainer">
-        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 Centerlize"
-        data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-        <h1><em>اهم ما يميز المحاسب الرقمي</em></h1>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
-        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-        <img src="assets/images/left-image-Edit.png" class="rounded img-fluid d-block mx-auto" alt="App">
-    </div>
-    <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
-        <ul class="right-text-ul">
-            <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                <img src="assets/images/about-icon-01-Edit.png" alt="">
-                <div class="text">
-                    <h3>المحاسب الرقمي</h3>
-                    <p>
-                        <ol class="right-text-list-1">
-                            <li>
-                                يتيح لك اضافة عميل او اكثر من عميل في وقت واحد بالأضافه الى مرفقاتهم
-                            </li>
-                            <li>
-                                يتيح لك اضافة ملاحظات بتاريخ محدد و يذكرك به قبل انتهاء الموعد
-                            </li>
-                            <li>
-                                يمكنك من نقل العملاء المراد حذفهم الى ملفات الحفظ بحيث يمكنك الرجوع الى بياناتهم في وقت لاحق
-                            </li>
-                            <li>
-                                يقوم بنقل جميع العناصر اللتي انتهى وقتها الى قائمة المنتهيات تلقائياً
-                            </li>
-                        </ol>
-                    </p>
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="promotion">
+        <div class="FirstHeadercontainer">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 Centerlize"
+                data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                <h1><em>اهم ما يميز المحاسب الرقمي</em></h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/left-image-Edit.png" class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
-            </li>
-            <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
-                <img src="assets/images/about-icon-02-Edit.png" alt="">
-                <div class="text">
-                    <h3> الفاتوره الألكترونيه</h3>
-                    <p>
-                        <ol class="right-text-list-1">
-                            <li>
-                                استخدام الفاتوره الإلكترونيه بشكل كامل من إستلام و إرسال
-                            </li>
-                            <li>
-                                التكامل التام مع مصلحة الضرائب
-                            </li>
-                            <li>
-                                تكويد الأصناف وفق التصنيف العالمي ومصلحة الضرائب سواء EGS أو GS1
-                            </li>
-                            <li>
-                                انهاء الإجراءات اللازمه لإستخدام البوابه لإصدار الفواتير الإلكترونيه
-                            </li>
-                            <li>
-                                الحصول على التوقيع الإلكتروني والرقم الموحد
-                            </li>
-                            <li>
-                                تسجيل بيانات جميع العملاء وتأكيد صحة الفواتير (إعتماد – إستلام)
-                            </li>
-                            <!--<li>
+                <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
+                    <ul class="right-text-ul">
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                            <img src="assets/images/about-icon-01-Edit.png" alt="">
+                            <div class="text">
+                                <h3>المحاسب الرقمي</h3>
+                                <p>
+                                <ol class="right-text-list-1">
+                                    <li>
+                                        يتيح لك اضافة عميل او اكثر من عميل في وقت واحد بالأضافه الى مرفقاتهم
+                                    </li>
+                                    <li>
+                                        يتيح لك اضافة ملاحظات بتاريخ محدد و يذكرك به قبل انتهاء الموعد
+                                    </li>
+                                    <li>
+                                        يمكنك من نقل العملاء المراد حذفهم الى ملفات الحفظ بحيث يمكنك الرجوع الى بياناتهم
+                                        في وقت لاحق
+                                    </li>
+                                    <li>
+                                        يقوم بنقل جميع العناصر اللتي انتهى وقتها الى قائمة المنتهيات تلقائياً
+                                    </li>
+                                </ol>
+                                </p>
+                            </div>
+                        </li>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
+                            <img src="assets/images/about-icon-02-Edit.png" alt="">
+                            <div class="text">
+                                <h3> الفاتوره الألكترونيه</h3>
+                                <p>
+                                <ol class="right-text-list-1">
+                                    <li>
+                                        استخدام الفاتوره الإلكترونيه بشكل كامل من إستلام و إرسال
+                                    </li>
+                                    <li>
+                                        التكامل التام مع مصلحة الضرائب
+                                    </li>
+                                    <li>
+                                        تكويد الأصناف وفق التصنيف العالمي ومصلحة الضرائب سواء EGS أو GS1
+                                    </li>
+                                    <li>
+                                        انهاء الإجراءات اللازمه لإستخدام البوابه لإصدار الفواتير الإلكترونيه
+                                    </li>
+                                    <li>
+                                        الحصول على التوقيع الإلكتروني والرقم الموحد
+                                    </li>
+                                    <li>
+                                        تسجيل بيانات جميع العملاء وتأكيد صحة الفواتير (إعتماد – إستلام)
+                                    </li>
+                                    <!--<li>
                                 أمكانية الغاء الفواتير بعد إرسالها حتى بعد مرور الفتره المسموح بها من مصلحة الضرائب المصريه للإلغاء
                             </li>-->
-                        </ol>
-                    </p>
-                </div>
-            </li>
-            <!-- <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
+                                </ol>
+                                </p>
+                            </div>
+                        </li>
+                        <!-- <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
                 <img src="assets/images/about-icon-03-Edit.png" alt="">
                 <div class="text">
                     <h3>الإيصال الألكتروني</h3>
@@ -540,7 +601,7 @@
                     </p>
                 </div>
             </li> -->
-            <!-- <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
+                        <!-- <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
                 <img src="assets/images/about-icon-03-Edit.png" alt="">
                 <div class="text">
                     <h3>التقارير</h3>
@@ -568,69 +629,74 @@
                     </p>
                 </div>
             </li> -->
-        </ul>
-    </div>
-</div>
-</div>
-</section>
-<!-- ***** Features Big Item End ***** -->
-
-<div class="right-image-decor"></div>
-
-<!-- ***** Testimonials Starts ***** -->
-<section class="section" id="testimonials">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <div class="center-heading">
-                    <h2>التعريف <em>بالمحاسب الرقمي</em></h2>
-                    <p>المحاسب الرقمي هو نظام متكامل يساعد المحاسب في اداء المهام اليوميه بشكل سريع و منسق</p>
+                    </ul>
                 </div>
             </div>
-            <div class="col-lg-10 col-md-12 col-sm-12 mobile-bottom-fix-big"
-            data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-            <div class="owl-carousel owl-theme">
-                <div class="item service-item">
-                    <div class="author">
-                        <i><img src="assets/images/testimonial-author-1-Edit.png" alt="Author One"></i>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
+    <div class="right-image-decor"></div>
+
+    <!-- ***** Testimonials Starts ***** -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="center-heading">
+                        <h2>التعريف <em>بالمحاسب الرقمي</em></h2>
+                        <p>المحاسب الرقمي هو نظام متكامل يساعد المحاسب في اداء المهام اليوميه بشكل سريع و منسق</p>
                     </div>
-                    <div class="testimonial-content">
-                        <!--<ul class="stars">
+                </div>
+                <div class="col-lg-10 col-md-12 col-sm-12 mobile-bottom-fix-big"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/images/testimonial-author-1-Edit.png" alt="Author One"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <!--<ul class="stars">
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                         </ul>-->
-                        <h3>المحاسب الرقمي</h3>
-                        <p class="Contained-P">
-                            المحاسب الرقمي هو دليلك المستقبلي على حل المشكلات المحاسبيه سواء كانت (ماليه او قانونيه او مُراجعه) التي تقابل الشركات بصوره سريعه و مميزه لبناء مؤسسه افضل ذات نطاق واسع لانه يستهدف احد اعمدة الشركه الاساسيه
-                        </p>
-                        <span>IDS</span>
-                    </div>
-                </div>
-                <div class="item service-item">
-                    <div class="author">
-                        <i><img src="assets/images/testimonial-Logo-2-Edit.png" alt="Second Author"></i>
-                    </div>
-                    <div class="testimonial-content">
-                        <!--<ul class="stars">
+                                <h3>المحاسب الرقمي</h3>
+                                <p class="Contained-P">
+                                    المحاسب الرقمي هو دليلك المستقبلي على حل المشكلات المحاسبيه سواء كانت (ماليه او
+                                    قانونيه او مُراجعه) التي تقابل الشركات بصوره سريعه و مميزه لبناء مؤسسه افضل ذات نطاق
+                                    واسع لانه يستهدف احد اعمدة الشركه الاساسيه
+                                </p>
+                                <span>IDS</span>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/images/testimonial-Logo-2-Edit.png" alt="Second Author"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <!--<ul class="stars">
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                         </ul>-->
-                        <h3>الفاتوره الإلكترونيه</h3>
-                        <strong>
-                            <p class="Contained-P">
-                                هي وثيقة رقمية تساعدك على حفظ البيانات وتبادلها عبر الإنترنت بدلًا من التعاملات الورقية، وتثبت معاملات البيع بغض النظر عن ما تحتويه إذا كان منتجات أو خدمات وذلك من خلال منظومة الضرائب سعيًا للتخلص من التعاملات الورقية على مستوى جمهورية مصر العربية
-                            </p>
-                        </strong>
-                        <span>IDS</span>
-                    </div>
-                </div>
-                <!-- <div class="item service-item">
+                                <h3>الفاتوره الإلكترونيه</h3>
+                                <strong>
+                                    <p class="Contained-P">
+                                        هي وثيقة رقمية تساعدك على حفظ البيانات وتبادلها عبر الإنترنت بدلًا من التعاملات
+                                        الورقية، وتثبت معاملات البيع بغض النظر عن ما تحتويه إذا كان منتجات أو خدمات وذلك
+                                        من خلال منظومة الضرائب سعيًا للتخلص من التعاملات الورقية على مستوى جمهورية مصر
+                                        العربية
+                                    </p>
+                                </strong>
+                                <span>IDS</span>
+                            </div>
+                        </div>
+                        <!-- <div class="item service-item">
                     <div class="author">
                         <i><img src="assets/images/testimonial-Receipt-Logo.png" alt="Author Third"></i>
                     </div>
@@ -642,7 +708,7 @@
                         <span>IDS</span>
                     </div>
                 </div> -->
-                <!--<div class="item service-item">
+                        <!--<div class="item service-item">
                     <div class="author">
                         <i><img src="assets/images/testimonial-Logo-2-Edit.png" alt="Fourth Author"></i>
                     </div>
@@ -659,102 +725,110 @@
                             <span>IDS</span>
                         </div>
                     </div>-->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- ***** Testimonials Ends ***** -->
-
-
-<!-- ***** Footer Start ***** -->
-<footer id="contact-us">
-    <div class="container">
-        <div class="footer-content">
-            <div class="row">
-                <!-- ***** Contact Form Start ***** -->
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="contact-form">
-                        <form id="contact" action="https://formspree.io/f/mnqyvnro" method="post">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12">
-                                    <fieldset>
-                                        <input name="email" type="text" id="name" placeholder="البريد الإلكتروني"
-                                        style="background-color: rgba(250,250,250,0.3);text-align: right;">
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-6 col-sm-12">
-                                    <fieldset>  
-                                        <input name="name" type="text" id="email" placeholder="الأسم بالكامل"
-                                         style="background-color: rgba(250,250,250,0.3); text-align: right;">
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-12">
-                                    <fieldset>
-                                        <textarea name="message" rows="6" id="message" placeholder="محتوى الرساله"
-                                         style="background-color: rgba(250,250,250,0.3);text-align: right;"></textarea>
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-12">
-                                    <fieldset>
-                                        <button type="submit" id="form-submit" class="main-button">تواصل معنا</button>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
-                <!-- ***** Contact Form End ***** -->
-                <div class="right-content col-lg-6 col-md-12 col-sm-12">
-                    <h2 dir="rtl">المزيد عن <em>IDS</em></h2>
-                    <p dir="rtl">
-                        IDS هي إحدى الشركات المتطوره الرائده في مجال إعداد وتصميم وتطوير برامج الحاسب الآلي والتي تم إنشاؤها بواسطة مجموعه من المهندسين ذوي الخبره المتخصصين في تطوير البرمجيات لتتناسب مع أحتياجات السوق المحلية بجودة عاليه
-                        <br><br>
-                        تضم شركة IDS نخبة من المتخصصين في مجال إعداد وتطوير وتطبيق البرمجيات في مجالات مختلفه مما يساعدنا علي إعطاء عمالئنا افضل جوده ممكنه بسهوله ونساعدهم علي الإستفاده القصوي من الحلول الخاصة بنا
-                    </p>
-                    <ul class="social">
-                        <li><a href="https://www.facebook.com/profile.php?id=100090384832365"><i class="fa fa-facebook"></i></a></li>
-                        <!-- <li><a href=""><i class="fa fa-twitter"></i></a></li> -->
-                        <!-- <li><a href=""><i class="fa fa-linkedin"></i></a></li> -->
-                        <li><a href="https://fadyids.github.io/intelligent_digital_solutions_website/"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="https://www.ids22.com/"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
-                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="sub-footer">
-                    <p>Copyright &copy; 2022
-                        
-                        | Designed by Intelligent Digital Solutions</p>
+    </section>
+    <!-- ***** Testimonials Ends ***** -->
+
+
+    <!-- ***** Footer Start ***** -->
+    <footer id="contact-us">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <!-- ***** Contact Form Start ***** -->
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="contact-form">
+                            <form id="contact" action="https://formspree.io/f/mnqyvnro" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <input name="email" type="text" id="name" placeholder="البريد الإلكتروني"
+                                                style="background-color: rgba(250,250,250,0.3);text-align: right;">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <input name="name" type="text" id="email" placeholder="الأسم بالكامل"
+                                                style="background-color: rgba(250,250,250,0.3); text-align: right;">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <textarea name="message" rows="6" id="message" placeholder="محتوى الرساله"
+                                                style="background-color: rgba(250,250,250,0.3);text-align: right;"></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="main-button">تواصل
+                                                معنا</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- ***** Contact Form End ***** -->
+                    <div class="right-content col-lg-6 col-md-12 col-sm-12">
+                        <h2 dir="rtl">المزيد عن <em>IDS</em></h2>
+                        <p dir="rtl">
+                            IDS هي إحدى الشركات المتطوره الرائده في مجال إعداد وتصميم وتطوير برامج الحاسب الآلي والتي تم
+                            إنشاؤها بواسطة مجموعه من المهندسين ذوي الخبره المتخصصين في تطوير البرمجيات لتتناسب مع
+                            أحتياجات السوق المحلية بجودة عاليه
+                            <br><br>
+                            تضم شركة IDS نخبة من المتخصصين في مجال إعداد وتطوير وتطبيق البرمجيات في مجالات مختلفه مما
+                            يساعدنا علي إعطاء عمالئنا افضل جوده ممكنه بسهوله ونساعدهم علي الإستفاده القصوي من الحلول
+                            الخاصة بنا
+                        </p>
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/profile.php?id=100090384832365"><i
+                                        class="fa fa-facebook"></i></a></li>
+                            <!-- <li><a href=""><i class="fa fa-twitter"></i></a></li> -->
+                            <!-- <li><a href=""><i class="fa fa-linkedin"></i></a></li> -->
+                            <li><a href="https://fadyids.github.io/intelligent_digital_solutions_website/"><i
+                                        class="fa fa-rss"></i></a></li>
+                            <li><a href="https://www.ids22.com/"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <p>Copyright &copy; 2022
+
+                            | Designed by Intelligent Digital Solutions</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    
+
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
-    
+
     <!-- Bootstrap -->
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    
+
     <!-- Plugins -->
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/imgfix.min.js"></script>
-    
+
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
-    
-    
+
+
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/poper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
-        
-    </body>
-    </html>
+
+</body>
+
+</html>
