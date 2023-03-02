@@ -1014,6 +1014,7 @@ Carousel
 }
 
 #Carousel-slide .item .testimonial-content {
+  height: 370px;
   /*background: rgb(244,129,63);
   background: linear-gradient(145deg, rgba(11, 142, 20,1) 0%, rgba(15, 189, 27,1) 100%);
   
@@ -1063,6 +1064,7 @@ Carousel
   color: rgba(15, 189, 27,1);
   font-weight: 300;
   font-size: 16px;
+  
 }
 
 /* #Carousel-slide .author img {
@@ -1398,6 +1400,7 @@ testimonials
 }
 
 #testimonials .item .testimonial-content {
+  
   /*background: rgb(244,129,63);
   background: linear-gradient(145deg, rgba(11, 142, 20,1) 0%, rgba(15, 189, 27,1) 100%);
   
